@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion and Feedback - Environmental Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background:rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        #form-section {
+            background: white;
+            padding: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        #form-section h2 {
+            margin-bottom: 20px;
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <h1 style="color: yellowgreen;">Provide Suggestion or Feedback</h1>
+            <br>
+            <nav>
+                <ul>
+                    <li><a href="index.html"    style="color: gold;">Home</a></li>
+                    <li><a href="problem.html"  style="color: gold;">Problem</a></li>
+                    <li><a href="solutions.html"style="color: gold;">Solutions</a></li>
+                    <li><a href="about.html"    style="color: gold;">About</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="form-section">
+                <h2>We value your feedback and suggestions!</h2>
+                <form action="submit_feedback.html" method="post">
+                    <!-- <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required> -->
+
+                    <label for="feedback">Your Feedback/Suggestion:</label>
+                    <textarea id="feedback" name="feedback" rows="5" required></textarea>
+
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </section>
+        </main>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Environmental Awareness. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures full height of viewport */
+    background: url('images/sunset-7133867_1280.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: left;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#abc a{
+    color: #0ac2fa;
+}
+/* Center Align Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    /* background-color:rgba(0, 0, 0, 0.6);; Optional: Navigation bar background color */
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Adjust spacing between navigation and buttons */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Flex container for header content */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures the title and buttons are aligned */
+    padding: 1rem;
+}
+
+/* Align the auth buttons to the top right */
+.auth-buttons {
+    background: transparent; /* Ensure no background color */
+    position: absolute; /* Position it */
+    font: bold;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    margin: 0; /* Remove extra margins if any */
+    padding: 0; /* Remove unwanted padding */
+}
+
+.auth-buttons .btn {
+    background: transparent; /* Transparent button container */
+
+    border: #333;
+    font: bold;
+}
+.auth-buttons .btn a {
+    text-decoration: none; /* Remove underline */
+    color: #fff; /* White text */
+    padding: 10px 20px; /* Add padding for a bubble effect */
+    background-color: #32cd32; /* Bright green color */
+    border-radius: 30px; /* Make it rounded like a bubble */
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+    transition: all 0.3s ease; /* Smooth hover effect */
+}
+
+.auth-buttons .btn a:hover {
+    background-color: #28a428; /* Slightly darker green on hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3); /* Enhance shadow for hover effect */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+
+.auth-buttons .btn a:hover {
+    text-decoration: underline; /* Darker green hover effect */
+}
+
+
+
+/* Main Content */
+main {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+    border-radius: 20px;
+    margin: 90px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #76c893;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+h3{
+    color: #76c893;
+}
+
+p {
+    font-size: 1rem;
+    color: #e0e0e0;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin-top: auto;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* Additional Styling for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+   /* Image Container Styling */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center; /* Align images to the center */
+}
+
+.image-container img {
+    width: calc(40% - 10px); /* Each image will take up 40% of the row minus gap */
+    max-width: 200px; /* Ensure the images don't get too large on wide screens */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners */
+    object-fit: cover;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    color: rgb(71, 8, 244);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+#home {
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+
+
+.join-link, .feedback-link {
+    color: #4CAF50; /* Green color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.join-link:hover, .feedback-link:hover {
+    color: #45a049; /* Darker green for hover effect */
+    text-decoration: underline;
+}
+
+#form-section {
+    background: #fff;
+    padding: 2px;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#form-section h2 {
+    margin-bottom: 20px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+form input,form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+.link-box {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for a better look */
+    background-color: rgba(118, 201, 147, 0.8); /* Light green background matching the theme */
+    color: #fff; /* White text color */
+    border: 2px solid #76c893; /* Green border */
+    border-radius: 5px; /* Slightly rounded corners */
+    text-decoration: none; /* Remove underline from link */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+}
+
+.link-box:hover {
+    background-color: #76c893; /* Darker green on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    color: #fff; /* Ensure text stays visible on hover */
+}
+
+
+
+    
+}

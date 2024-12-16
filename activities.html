@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Activities</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Navigation Bar Styling */
+        nav {
+            background-color:  rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 0 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Flexbox layout */
+        main {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        aside {
+            flex: 1;
+            margin-left: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: #59efab;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        aside h2 {
+            text-align: center;
+            color: #090707;
+        }
+
+        aside p, aside ul {
+            font-size: 1rem;
+            color: #0b0a0a;
+            line-height: 1.6;
+        }
+
+        .content {
+            flex: 3;
+        }
+
+        .image-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .abc {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .abc a {
+            background-color: #59efab;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: darkkhaki;">Recent Environmental Activities</h1>
+        <nav>
+            <a href="index.html" style="color: lightpink;">Home</a>
+            <a href="about.html" style="color: lightpink;">About</a>
+        </nav>
+    </header>
+
+    <!-- Navigation Bar below the H1 -->
+   
+
+    <main>
+        <!-- Main Content -->
+        <div class="content">
+            <section>
+                <h2>Cleaning the Environment</h2>
+                <div class="image-container">
+                    <img src="images/hand-drawn-kid-cleaning-the-environment-free-vector.jpg" alt="Cleaning Activity 1">
+                    <img src="images/GettyImages-1019081850-scaled-e1575376473798.jpg" alt="Cleaning Activity 2">
+                </div>
+            </section>
+            <section>
+                <h2>Tree Plantation</h2>
+                <div class="image-container">
+                    <img src="images/1668409819Tree Plantation Programme.jpg" alt="Tree Plantation 1">
+                    <img src="images/yourstory-tree-plantation.avif" alt="Tree Plantation 2">
+                </div>
+            </section>
+        </div>
+
+        <aside>
+            <h2>Environmental Awareness</h2>
+            <video src="media/environmental-awareness-1080-publer.io.mp4" width="300" height="300" controls autoplay muted loop></video>
+        </aside>
+
+        <aside>
+            <h2>Activity</h2>
+            <ul>
+                <li>Informative content on pressing environmental issues.</li>
+                <li>Interactive infographics to visualize data.</li>
+                <li>Actionable solutions for pollution and climate change.</li>
+                <li>User feedback and initiative opportunities.</li>
+                <li>Promoting collective responsibility for the planet.</li>
+            </ul>
+        </aside>
+        
+        <!-- Call to Action Section -->
+        <div class="abc">
+            <h2>Join Our Environmental Movement</h2>
+            <p>
+                We're on a mission to make the world a cleaner, greener place, and we need your help! By joining our platform, you can actively participate in key environmental activities like cleaning drives and tree plantation programs. 
+                <strong>Your involvement matters</strong> – every action counts towards creating a more sustainable future.
+            </p>
+            <ul>
+                <li><strong>Participate in Cleaning Campaigns:</strong> Join our local cleanup efforts and earn "Green Points" that can be redeemed for exclusive rewards.</li>
+                <li><strong>Tree Plantation Drives:</strong> Help us plant trees and combat deforestation, contributing to our growing global forest initiative.</li>
+                <li><strong>Exclusive Rewards:</strong> As a member, unlock eco-friendly products and special recognition through your participation.</li>
+                <li><strong>Earn ASARs (Actionable Social Awareness Rewards):</strong> Participate in events and volunteer to unlock privileges like expert talks and webinars.</li>
+                <li><strong>Become a Member of Our "PG":</strong> Join our "Planet Guardians" group, gain leadership opportunities, and make an impact on global environmental policies.</li>
+            </ul>
+            <p>
+                Together, we can create a cleaner, greener world! <strong>Sign up now</strong> and start earning rewards for every action you take to protect the environment.
+            </p>
+            <a href="signup.html">Join Us Today!</a>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Environmental Awareness. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

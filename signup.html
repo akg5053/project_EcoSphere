@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHome | Sign Up</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body and Background */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background: linear-gradient(to bottom, #a94c00, #000); */
+            background: url('https://wallpaperaccess.com/full/776489.jpg') no-repeat center center fixed;
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Form Container */
+        .signup-container {
+            background: white;
+            color: #000;
+            width: 400px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .signup-container h1 {
+            margin-bottom: 20px;
+            color: #37e14b;
+        }
+
+        .signup-container label {
+            display: block;
+            text-align: left;
+            margin: 10px 0 5px;
+        }
+
+        .signup-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        /* Buttons */
+        .btn {
+            background: #15f563;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+            width: 100%;
+        }
+
+        .btn:hover {
+            background: #3db8e9;
+        }
+
+        .link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .link a {
+            color: #2cb2f0;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h1>Sign Up</h1>
+        <form action="#" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+        <div class="link">
+            Already have an account? <a href="login.html">Login</a>
+        </div>
+    </div>
+</body>
+</html>
